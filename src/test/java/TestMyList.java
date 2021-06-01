@@ -8,7 +8,7 @@ public class TestMyList {
     public void getSizeOfList1() {
         // * Environment setup
         // * Declaring test lists
-        MyList<Integer> l_test_size_1 = new MyList();
+        List<Integer> l_test_size_1 = new List();
 
         // * Filling test list
         l_test_size_1.add(0);
@@ -25,7 +25,7 @@ public class TestMyList {
     public void getSizeOfList2() {
         // * Environment setup
         // * Declaring test lists
-        MyList<String> l_test_size_2 = new MyList();
+        List<String> l_test_size_2 = new List();
 
         l_test_size_2.add("1");
         l_test_size_2.add("2");
@@ -40,7 +40,7 @@ public class TestMyList {
     public void getSizeOfList3() {
         // * Environment setup
         // * Declaring test lists
-        MyList<Float> l_test_size_3 = new MyList();
+        List<Float> l_test_size_3 = new List();
 
         // * Filling test list
         l_test_size_3.add((float) 1.2);
@@ -58,7 +58,7 @@ public class TestMyList {
     public void clearList1() {
         // * Environment setup
         // * Declaring test lists
-        MyList<Integer> l_test_size_1 = new MyList();
+        List<Integer> l_test_size_1 = new List();
 
         // * Filling test list
         l_test_size_1.add(0);
@@ -77,7 +77,7 @@ public class TestMyList {
     public void clearList2() {
         // * Environment setup
         // * Declaring test lists
-        MyList<String> l_test_size_2 = new MyList();
+        List<String> l_test_size_2 = new List();
 
         // * Filling test list
         l_test_size_2.add("1");
@@ -95,7 +95,7 @@ public class TestMyList {
     public void clearList3() {
         // * Environment setup
         // * Declaring test lists
-        MyList<Float> l_test_size_3 = new MyList();
+        List<Float> l_test_size_3 = new List();
 
         // * Filling test list
         l_test_size_3.add((float) 1.2);
@@ -115,8 +115,8 @@ public class TestMyList {
     public void addItemsToList1() {
         // * Environment setup
         // * Declaring test lists
-        MyList<Integer> l_test_size_1_a = new MyList(0, 1, 4, 2, 3);
-        MyList<Integer> l_test_size_1_b = new MyList();
+        List<Integer> l_test_size_1_a = new List(0, 1, 4, 2, 3);
+        List<Integer> l_test_size_1_b = new List();
 
 
         // * Filling test list
@@ -130,7 +130,7 @@ public class TestMyList {
     public void addItemsToList2() {
         // * Environment setup
         // * Declaring test lists
-        MyList<String> l_test_size_2_a = new MyList("0", "1", "2", "3", "4");
+        List<String> l_test_size_2_a = new List("0", "1", "2", "3", "4");
 
 
         // * Filling test list
@@ -146,7 +146,7 @@ public class TestMyList {
     public void addItemsToList3() {
         // * Environment setup
         // * Declaring test lists
-        MyList<Float> l_test_size_3_a = new MyList(1.2, 6.198, 3.89, 12.7, 26.28, 15.52);
+        List<Float> l_test_size_3_a = new List(1.2, 6.198, 3.89, 12.7, 26.28, 15.52);
 
 
         // * Filling test list
@@ -162,7 +162,7 @@ public class TestMyList {
     public void checkItemInList1() {
         // * Environment setup
         // * Declaring test lists
-        MyList<Integer> l_test_size_1 = new MyList(0, 1, 4, 2, 3);
+        List<Integer> l_test_size_1 = new List(0, 1, 4, 2, 3);
 
 
         // Test 1:
@@ -173,7 +173,7 @@ public class TestMyList {
     public void checkItemInList2() {
         // * Environment setup
         // * Declaring test lists
-        MyList<String> l_test_size_2 = new MyList("0", "1", "2", "3", "4");
+        List<String> l_test_size_2 = new List("0", "1", "2", "3", "4");
 
         // Test 2:
         assertFalse(l_test_size_2.exists("5"));
@@ -183,7 +183,7 @@ public class TestMyList {
     public void checkItemInList3() {
         // * Environment setup
         // * Declaring test lists
-        MyList<Double> l_test_size_3 = new MyList(1.2, 6.198, 3.89, 12.7, 26.28, 15.52);
+        List<Double> l_test_size_3 = new List(1.2, 6.198, 3.89, 12.7, 26.28, 15.52);
 
         // Test 3:
         assertTrue(l_test_size_3.exists((Double) 6.198));
@@ -193,7 +193,7 @@ public class TestMyList {
     public void getItemInList1() {
         // * Environment setup
         // * Declaring test lists
-        MyList<Integer> l_test_size_1 = new MyList(0, 1, 4, 2, 3);
+        List<Integer> l_test_size_1 = new List(0, 1, 4, 2, 3);
 
 
         // Test 1:
@@ -204,7 +204,7 @@ public class TestMyList {
     public void getItemInList2() {
         // * Environment setup
         // * Declaring test lists
-        MyList<String> l_test_size_2 = new MyList("0", "1", "2", "3", "4");
+        List<String> l_test_size_2 = new List("0", "1", "2", "3", "4");
 
         // Test 2:
         assertEquals("3", l_test_size_2.get(3));
@@ -214,7 +214,7 @@ public class TestMyList {
     public void getItemInList3() {
         // * Environment setup
         // * Declaring test lists
-        MyList<Double> l_test_size_3 = new MyList(1.2, 6.198, 3.89, 12.7, 26.28, 15.52);
+        List<Double> l_test_size_3 = new List(1.2, 6.198, 3.89, 12.7, 26.28, 15.52);
 
         // Test 3:
         assertEquals(12.7, l_test_size_3.get(3));
@@ -224,7 +224,7 @@ public class TestMyList {
     public void getIndexOfItemList1() {
         // * Environment setup
         // * Declaring test lists
-        MyList<Integer> l_test_size_1 = new MyList(0, 1, 4, 2, 3);
+        List<Integer> l_test_size_1 = new List(0, 1, 4, 2, 3);
 
 
         // Test 1:
@@ -235,7 +235,7 @@ public class TestMyList {
     public void getIndexOfItemList2() {
         // * Environment setup
         // * Declaring test lists
-        MyList<String> l_test_size_2 = new MyList("0", "1", "2", "3", "4");
+        List<String> l_test_size_2 = new List("0", "1", "2", "3", "4");
 
         // Test 2:
         assertEquals(-1, l_test_size_2.indexOf("5"));
@@ -245,7 +245,7 @@ public class TestMyList {
     public void getIndexOfItemList3() {
         // * Environment setup
         // * Declaring test lists
-        MyList<Double> l_test_size_3 = new MyList(1.2, 6.198, 3.89, 12.7, 26.28, 15.52);
+        List<Double> l_test_size_3 = new List(1.2, 6.198, 3.89, 12.7, 26.28, 15.52);
 
         // Test 3:
         assertEquals(0, l_test_size_3.indexOf((Double) 1.2));
@@ -255,11 +255,12 @@ public class TestMyList {
     public void removeItemFromList1() {
         // * Environment setup
         // * Declaring test lists
-        MyList<Integer> l_test_size_1_a = new MyList(0, 4, 2, 3);
-
+        List<Integer> l_test_size_1_a = new List(0, 4, 2, 3);
+        System.out.println(l_test_size_1_a.toString());
+        l_test_size_1_a.remove(3);
         l_test_size_1_a.remove(1);
-        l_test_size_1_a.remove(1);
 
+        System.out.println(l_test_size_1_a.toString());
         // Test 1:
         assertEquals(2, l_test_size_1_a.getSize());
     }
@@ -268,10 +269,10 @@ public class TestMyList {
     public void removeItemFromList2() {
         // * Environment setup
         // * Declaring test lists
-        MyList<String> l_test_size_2_a = new MyList("0", "1", "2", "3");
-
+        List<String> l_test_size_2_a = new List("0", "1", "2", "3");
+        System.out.println(l_test_size_2_a.toString());
         l_test_size_2_a.remove(1);
-
+        System.out.println(l_test_size_2_a.toString());
         // Test 2:
         assertEquals(3, l_test_size_2_a.getSize());
     }
@@ -280,10 +281,11 @@ public class TestMyList {
     public void removeItemFromList3() {
         // * Environment setup
         // * Declaring test lists
-        MyList<Float> l_test_size_3_a = new MyList(1.2, 6.198, 12.7, 26.28, 15.52);
-
-        l_test_size_3_a.remove(0);
-        l_test_size_3_a.remove(0);
+        List<Float> l_test_size_3_a = new List(1.2, 6.198, 12.7, 26.28, 15.52);
+        System.out.println(l_test_size_3_a.toString());
+        System.out.println(l_test_size_3_a.remove(4));
+        System.out.println(l_test_size_3_a.remove(1));
+        System.out.println(l_test_size_3_a.toString());
         // Test 3:
         assertEquals(3, l_test_size_3_a.getSize());
     }
